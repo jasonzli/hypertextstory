@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+
+
+body {
+  background-image: url('road_not_taken_.jpg');
+  background-color:yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Beth Ellen', cursive;
+}
+
+h1.leftHead{
+  	transform: translateY(-50%);
+	top:50%;
+	vertical-align: middle;
+	text-align:center;
+	color:back;
+}
+
+p.firstStanza{
+	margin-left: 25%;
+	text-align:left;
+	color:black;
+	font-size:14px;
+}
+
+p.firstStanza:hover{
+	-webkit-transform: scale(1.2);
+}
+
+p.secondStanza{
+	text-align:left;
+	color:black;
+	font-size:14px;
+}
+
+
+p.thirdStanza{
+	margin-left:40%;
+	text-align:left;
+	color:black;
+	font-size:14px;
+}
+p.thirdStanza:hover{
+	-webkit-transform: scale(1.2);
+}
+
+p.fourthStanza{
+	text-align:right;
+	color:black;
+	font-size:15px;
+}
+
+h1.rightHead{
+	text-align:right;color:black;
+}
+
+p.rightP{
+	text-align:right;
+	color:black;
+	font-size:10px;
+
+}
+
+p.rightOther{
+	text-align:left;color:black;font-size:15px;
+}
+
+a: visited{
+	color: magenta;
+}
+
+a: active{
+	color: green;
+}
+
+a: hover{
+	color: orange;
+}
