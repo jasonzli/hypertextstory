@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
 
+body{
+
+	background-color: ;
+}
+
 #header {
 	position:fixed;
 	height: 200px;
@@ -16,6 +21,7 @@
 }
 
 .option{
+	background-color:white;
 	position:absolute;
 }
 
@@ -27,6 +33,22 @@
 .content{
 	position:absolute;
 	margin-top: 200px;
+}
+
+.optionCover{
+	background-color:grey;
+	width:0px;
+	transition: width 1s;
+	transition-timing-function: ease-out;
+}
+
+.optionText{
+	width:100%;
+}
+
+.option:hover .optionCover{
+	width:100%;
+	letter-spacing: 20px;
 }
 
 #headerText{
