@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+
+#header {
+	position:fixed;
+	height: 200px;
+	width:100%;
+	background: #189acc;
+	font-family: 'Blinker', sans-serif;
+	font-size:73px;
+}
+
+.optionText {
+	position:absolute;
+	font-family: 'Blinker', sans-serif;
+	font-size:52px;
+}
+
+.option{
+	position:absolute;
+}
+
+.optionsHolder{
+	margin-left: 10%;
+	width: 100%;
+}
+
+.content{
+	position:absolute;
+	margin-top: 200px;
+}
+
+#headerText{
+	bottom: 0px;
+	position: absolute;
+	letter-spacing:default;
+}
+
+#hoverArea{
+	height:100%;
+	width:100%;
+
+}
+
+#headerCover{
+	width: 0%;
+	height: 100%;
+	background-color: #03b6fc;
+	transition: width 1s, letter-spacing 1s;
+	transition-timing-function: ease-out;
+}
+
+#hoverArea:hover #headerCover{
+	width:100%;
+	letter-spacing: 20px;
+}
