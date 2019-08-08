@@ -1,77 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
 
+html,body {margin:0;padding:0;height:100vh;width:100vw;}
+
+
 body{
 
-	background-color: ;
+	background-color: white;
 }
 
-#header {
+
+.optionText a {
+	color:#6ddedc;
+ 	text-decoration: none;
+}
+.optionText a:hover {
+	color:#f2e338;
+}
+.header {
+	/*z-index: 1;*/
 	position:fixed;
+	background-color:#5189e8;
+	width:100%;
+	height:200px;
+}
+
+.hoverArea{
+	width:100%;
+	height:100%;
+}
+
+.headerCoverHeader{
+	width: 0%;
 	height: 200px;
-	width:100%;
-	background: #189acc;
-	font-family: 'Blinker', sans-serif;
-	font-size:73px;
-}
-
-.optionText {
 	position:absolute;
-	font-family: 'Blinker', sans-serif;
-	font-size:52px;
-}
-
-.option{
-	background-color:white;
-	position:absolute;
-}
-
-.optionsHolder{
-	margin-left: 10%;
-	width: 100%;
-}
-
-.content{
-	position:absolute;
-	margin-top: 200px;
-}
-
-.optionCover{
-	background-color:grey;
-	width:0px;
-	transition: width 1s;
+	background-color: #03b6fc;
+	transition: all linear 1s;
 	transition-timing-function: ease-out;
-}
-
-.optionText{
-	width:100%;
-}
-
-.option:hover .optionCover{
-	width:100%;
-	letter-spacing: 20px;
 }
 
 #headerText{
 	bottom: 0px;
+	width:100%;
 	position: absolute;
+	font-family: 'Blinker', sans-serif;
+	font-size:52px;
+	color:#d45cf2;
 	letter-spacing:default;
 }
 
-#hoverArea{
+.hoverArea:hover .headerCoverHeader{
+	width:100%;
+	letter-spacing: 8em;
+}
+
+.content {
+	position:absolute;
+	background-color:white;
+	top:200px;
+	width:100%;
 	height:100%;
-	width:100%;
-
 }
 
-#headerCover{
-	width: 0%;
-	height: 100%;
-	background-color: #03b6fc;
-	transition: width 1s, letter-spacing 1s;
-	transition-timing-function: ease-out;
+.optionHolder {
+    position: fixed;
+
+    /*go with fixed for now*/
+    width: auto;
+    height: 1em;
+    left:10%;
 }
 
-#hoverArea:hover #headerCover{
-	width:100%;
-	letter-spacing: 20px;
+.option{
+	font-size:52px;
+	height:1em;
+	width:700px;
+	border-style:solid;
+
+	border-left-color:black;
+	border-right-color:black;
+	border-top-color:transparent;
+	border-bottom-color:transparent;
+	border-width:2px;
+}
+
+.optionText {
+	font-family: 'Blinker', sans-serif;
+	font-size:52px;
+}
+
+.hoverCover{
+	width:0%;
+	height:100%;
+	background-color:#a1cdd1;
+	transition:all linear .5s;
+	transition-timing-function:ease-in;
+}
+
+.hoverArea:hover .hoverCover{
+	width:700px;
+	letter-spacing: 2em;
 }
