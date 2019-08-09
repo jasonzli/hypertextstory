@@ -430,18 +430,23 @@ body{
 		border-color:transparent;
 		color:transparent;
 	};
-	50%{
+	40%{
 		height:0px;
 		opacity:0;
 		border-color:transparent;
 		color:transparent;
 	};
-	51%{
+	45%{
 		height:auto;
 		opacity:1;
 		border-color:#748bb0;
 		color:#adb6c4;
 	};
+}
+
+.expand:hover{
+	background-color: #c5d0e0;
+	/*font-size: 38px;*/
 }
 
 .rightRows{
