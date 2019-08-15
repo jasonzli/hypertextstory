@@ -27,8 +27,24 @@ $( document ).ready(function() {
 
 
     $( ".pogi" ).on( "click", function() {
-      var html = "<div class='next'>hello</div>"
+      var html = 
+      "<h1 class='next linker spacer'>I heard of Amontillado</h1>";
       $("#content").append(html);
+
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $(".next").offset().top
+    }, 2000);
+      $( ".next" ).on( "click", function() {
+      var html = 
+      "<h1 class='next2 linker spacer'>To the vaults!</h1>";
+      $("#content").append(html);
+
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $(".next2").offset().top
+    }, 2000);
   });
+  });
+
+    
 
 });
